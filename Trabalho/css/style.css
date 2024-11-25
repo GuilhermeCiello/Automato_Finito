@@ -1,0 +1,58 @@
+body {
+    background-color: #696969;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 95%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 'header header''search tablearea';
+}
+.container header {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    grid-area: header;
+}
+.container .tableSection {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    grid-area: tablearea;
+    height: 650px;  
+}
+.contentSection {
+    overflow-y: auto;
+    height: 550px;  
+}
+.container .SearchSection {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    grid-area: search;
+    height: 650px;
+}
+
+
+input, button, table {
+    margin: 10px 0;
+}
+.output {
+    margin-top: 20px;
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.btn-success {
+    display: none;
+}
